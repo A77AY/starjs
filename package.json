@@ -23,7 +23,24 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {
-    "babel-cli": "^6.6.5"
+  "peerDependencies": {
+  },
+  "description": "JS framework for quickly create universal web applications",
+  "keywords": [
+    "js",
+    "framework",
+    "react",
+    "web-app",
+    "universal",
+    "hot-reload"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Star-JS/starjs/tree/master",
+  "bugs": {
+    "url": "https://github.com/Star-JS/starjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Star-JS/starjs.git"
   }
 }
