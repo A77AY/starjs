@@ -5,3 +5,4 @@ node_modules
 /tasks
 /index.js
 /start.js
+*.log

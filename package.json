@@ -1,10 +1,11 @@
 {
   "name": "starjs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Rinat Arsaev @krickray",
   "scripts": {
     "start": "npm run watch",
-    "watch": "babel src --watch --out-dir ."
+    "watch": "babel src --watch --out-dir .",
+    "pub": "babel src --out-dir . & npm publish"
   },
   "dependencies": {
     "babel-core": "^6.7.2",
@@ -20,6 +21,8 @@
     "express": "^4.13.4",
     "fs": "0.0.2",
     "gulp": "github:gulpjs/gulp#4.0",
+    "json-loader": "^0.5.4",
+    "monkey-hot-loader": "0.0.3",
     "nodemon": "^1.9.1",
     "path": "^0.12.7",
     "react": "^0.14.7",
