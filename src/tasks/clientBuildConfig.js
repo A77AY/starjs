@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default function getClientBuildConfig(config) {
     const {isDevelopment, rootPath} = config;
     const srcAbsPath = config.absPathFromRoot(config.structure.source.dirName);

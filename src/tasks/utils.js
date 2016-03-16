@@ -1,17 +1,16 @@
-import Log from '../server/logger'
+import path from 'path'
+import fs from 'fs'
+import webpack from 'webpack'
+import WebpackDevServer from 'webpack-dev-server'
+import nodemon from 'nodemon'
+import del from 'del'
+import gulp from 'gulp'
 import chalk from 'chalk'
+
+import Log from '../server/logger'
 
 import getClientBuildConfig from './clientBuildConfig'
 import getServerBuildConfig from './serverBuildConfig'
-
-const gulp = require('gulp');
-
-const path = require('path');
-const fs = require('fs');
-const webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
-const nodemon = require('nodemon');
-const del = require('del');
 
 function onBuild(done) {
     return function (err, stats) {

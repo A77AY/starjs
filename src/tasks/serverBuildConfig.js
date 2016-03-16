@@ -1,3 +1,6 @@
+import path from 'path'
+import fs from 'fs'
+
 export default function getServerBuildConfig(config) {
     const {isDevelopment, rootPath} = config;
     const srcAbsPath = config.absPathFromRoot(config.structure.source.dirName);
