@@ -1,6 +1,9 @@
 import Log from '../server/logger'
 import chalk from 'chalk'
 
+import getClientBuildConfig from './clientBuildConfig'
+import getServerBuildConfig from './serverBuildConfig'
+
 const gulp = require('gulp');
 
 const path = require('path');
@@ -323,10 +326,7 @@ export default{
     getPagesIndexGenFc,
     getWatchPagesIndexGenFc,
     getGenFc,
-    getWatchGenFc
+    getWatchGenFc,
+    getClientBuildConfig,
+    getServerBuildConfig
 }
-
-// Configs
-
-export {default as getClientBuildConfig} from './clientBuildConfig'
-export {default as getServerBuildConfig} from './serverBuildConfig'
