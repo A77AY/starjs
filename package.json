@@ -1,6 +1,6 @@
 {
   "name": "starjs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Rinat Arsaev @krickray",
   "scripts": {
     "start": "npm run watch",

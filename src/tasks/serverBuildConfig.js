@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs'
+import webpack from 'webpack'
 
 export default function getServerBuildConfig(config) {
     const {isDevelopment, rootPath} = config;
