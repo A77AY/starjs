@@ -207,7 +207,7 @@ function getIndexGenFc(config, dirName) {
                     fs.writeFile(saveDir + '/index.js', indexContent, function (err) {
                         if (err) return console.log(err);
                     });
-                    Log.Cl('index for ' + dirName + ' updated!');
+                    Log.Cl('index for ' + dirName + ' updated');
                 }
             });
     }
