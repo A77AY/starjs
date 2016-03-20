@@ -51,7 +51,7 @@ export default function getServerBuildConfig(config) {
             loaders: [
                 {
                     test: /\.jsx?/,
-                    loaders: ['monkey-hot', 'babel?presets[]=react,presets[]=es2015,presets[]=stage-0'],
+                    loaders: ['monkey-hot', 'babel?presets[]=react,presets[]=es2015,presets[]=stage-0,plugins[]=babel-plugin-transform-decorators-legacy'],
                     //exclude: /node_modules/,
                     include: [srcAbsPath, cfgAbsPath, path.join(rootPath, 'node_modules', '_')]
                 }, {

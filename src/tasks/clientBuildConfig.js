@@ -31,7 +31,7 @@ export default function getClientBuildConfig(config) {
             loaders: [
                 {
                     test: /\.jsx?/,
-                    loaders: ['babel?presets[]=react,presets[]=es2015,presets[]=stage-0,presets[]=react-hmre'],
+                    loaders: ['babel?presets[]=react,presets[]=es2015,presets[]=stage-0,presets[]=react-hmre,plugins[]=babel-plugin-transform-decorators-legacy'],
                     //exclude: /node_modules/,
                     include: [srcAbsPath, cfgAbsPath, path.join(rootPath, 'node_modules', '_')]
                 }, {
